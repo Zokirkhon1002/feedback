@@ -19,7 +19,7 @@ SEND_BTN.addEventListener("click", (e)=> {
     <strong>Thank you!</strong>
     <br>
     <strong>Feadback: ${selected_Rating}</strong>
-    <p>We will use your feedback \to improve our customer support</p>
+    <p>We will use your feedback \tto improve our customer support</p>
     <button class="btn redd" onclick="QUIT()">Quit</button>
     `
 })
