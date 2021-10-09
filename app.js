@@ -9,7 +9,7 @@ RATINGS_CONTAINER.addEventListener("click", (e) => {
   if (e.target.parentNode.classList.contains("rating")) {
     REMOVE_ACTIVE()
     e.target.parentNode.classList.add("active")
-    selected_Rating = e.target.nextSibling.innerHTML
+    selected_Rating = e.target.nextElementSibling.innerHTML
   }
 });
 
