@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.25s ease-in-out;
+}
+body {
+  background-color: #fef0f2;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  transition: all 0.25s ease-in-out;
+}
+.panel-container {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+  border-radius: 5px;
+  font-size: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  max-width: 500px;
+  transition: all 0.25s ease-in-out;
+}
+.panel-container strong {
+  line-height: 25px;
+}
+.ratings-container {
+  display: flex;
+  margin: 20px 0;
+}
+.rating {
+  flex: 1;
+  cursor: pointer;
+  padding: 25px;
+  margin: 10px 5px;
+  transition: all 0.25s ease-in-out;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
+.rating.active {
+  color: #fff;
+  background-color: rgb(146, 146, 146);
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
+.rating:hover {
+  color: #fff;
+  background-color: #302d2b;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
+.rating:active, .rating:active > img, .rating:active > small{
+  transform: scale(0.95);
+}
+.rating img {
+  width: 70px;
+  transition: all 0.25s ease-in-out;
+}
+.rating small {
+  color: #555;
+  display: inline-block;
+  margin: 10px 0 0;
+  transition: color 0.1s ease;
+  transition: scale 0.25s ease-in-out;
+}
+.rating:hover small,
+.rating.active small {
+  color: #fff;
+}
+.btn {
+  background-color: #555;
+  color: #fff;
+  border: 0;
+  border-radius: 25px;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+.btn:hover {
+  background-color: #302d2b;
+  box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+  border-radius: 5px;
+}
+.btn:focus {
+  outline: 0;
+}
+.btn:active {
+  transform: scale(0.95);
+}
+.fa-heart {
+  color: red;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.redd {
+    background-color: red;
+    color: #fff;
+    margin: 20px 0 0;
+}
+.redd:hover{
+    background-color: red;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    border-radius: 5px;
+}
